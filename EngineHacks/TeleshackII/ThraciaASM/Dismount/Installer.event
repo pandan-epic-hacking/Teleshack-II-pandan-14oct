@@ -1,0 +1,34 @@
+
+ALIGN 4
+#include "Dismount.lyn.event"
+
+#define MountedUnmounted(classIDMounted, classIDUnmounted) "BYTE classIDMounted classIDUnmounted"
+#define EndMountUnmountedTable "BYTE 0x00 0x00"
+
+ALIGN 4
+MountedClassTable:
+MountedUnmounted(MasterKnight, MasterKnight_Dismounted)
+MountedUnmounted(MasterKnight_F, MasterKnight_F_Dismounted)
+MountedUnmounted(SwordKnight, SwordKnight_Dismounted)
+MountedUnmounted(LanceKnight, LanceKnight_Dismounted)
+MountedUnmounted(AxeKnight, AxeKnight_Dismounted)
+MountedUnmounted(BowKnight, BowKnight_Dismounted)
+MountedUnmounted(ArchKnight, ArchKnight_Dismounted)
+MountedUnmounted(ForrestKnight, ForrestKnight_Dismounted)
+MountedUnmounted(GreatKnight, GreatKnight_Dismounted)
+MountedUnmounted(DukeKnight, DukeKnight_Dismounted)
+MountedUnmounted(Scaleshot, Scaleshot_Dismounted)
+MountedUnmounted(Skyseeker, Skyseeker_Dismounted)
+MountedUnmounted(Dragonlord, Dragonlord_Dismounted)
+MountedUnmounted(Seraphknight, Seraphknight_Dismounted)
+MountedUnmounted(PegasusRider, PegasusRider_Dismounted)
+MountedUnmounted(Falcoknight, Falcoknight_Dismounted)
+MountedUnmounted(DragonRider, DragonRider_Dismounted)
+MountedUnmounted(Dracoknight, Dracoknight_Dismounted)
+MountedUnmounted(MageKnight, MageKnight_Dismounted)
+MountedUnmounted(MageKnight_F, MageKnight_F_Dismounted)
+MountedUnmounted(RookKnight, RookKnight_Dismounted)
+MountedUnmounted(GoldKnight, GoldKnight_Dismounted)
+MountedUnmounted(Troubadour, Troubadour_Dismounted)
+MountedUnmounted(Paladin, Paladin_Dismounted)
+EndMountUnmountedTable

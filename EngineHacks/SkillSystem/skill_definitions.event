@@ -1,0 +1,48 @@
+
+#include "skill_definitions_decrepated.event"
+
+// vanilla skills
+#define StealID 1
+#define StealPlusID 2
+#define VantageID 3
+#define NihilID 4
+#define LockTouchID 5
+#define AdeptID 6
+#define AstraID 7
+#define CharismaID 8
+#define WrathID 9
+#define ParagonID 10
+#define MiracleID 11
+#define CritUpID 12
+#define DesperationID 13
+#define HexID 21
+#define EvenRhythmID 22
+#define OddRhythmID 23
+#define DazzleID 31
+
+// keep it continous for debug purpose
+
+// custom skills
+
+// TODO: add custom common skills here
+
+// personal skills
+#define RadianceID 14
+#define NightcallerID 15
+#define VictoryMarchID 16
+#define AvengerID 17
+#define RecklessChargeID 18
+#define AftershockID 19
+#define DullahanID 20
+#define HeadshotID 24
+#define CullingID 25
+#define TemperedRingID 26 //For the item
+#define BargainID 27
+#define CounterID 28
+#define ConversionID 29
+#define WatchfulID 30
+#define TerrainEffectiveID 31
+#define NonCombatantID 32
+#define GladiatorsAuraID 33
+#define SpellMirrorID 34
+#define DespoilID 35

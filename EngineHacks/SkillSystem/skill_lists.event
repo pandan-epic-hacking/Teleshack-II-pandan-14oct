@@ -1,0 +1,11 @@
+RogueSkillList:
+BYTE 255 StealPlusID
+BYTE 255 LocktouchID
+BYTE 00 00
+ALIGN 4
+
+ThiefSkillList:
+BYTE 1 StealPlusID
+BYTE 1 LocktouchID
+BYTE 00 00
+ALIGN 4

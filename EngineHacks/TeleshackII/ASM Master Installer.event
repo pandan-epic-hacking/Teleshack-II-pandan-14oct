@@ -1,0 +1,99 @@
+#include "ThraciaASM/ThraciaASMInstaller.event"
+#include "Music/MusicAsmInstaller.event"
+#include "Fixes/MasterFixesInstaller.event"
+
+#include "FE8-Battle_Anims_By_Character/FE8_Battle_Anims_By_Character_EA.event"
+#include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
+#include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
+
+#include "ASMCCheckSuite/ASMC Check Installer.event"
+#include "ASMCCheckSuite/GetBlueUnitCountASMC.lyn.event"
+
+#include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
+
+#include "StatusExpansion/StatusExpansion.event"
+
+// thief vision
+PUSH
+ORG 0x0178C2
+BYTE 0x02
+POP
+
+// torch vision
+PUSH
+ORG 0x02F4AE
+BYTE 0x05
+POP
+
+// EscapeDeathFix
+PUSH
+ORG 0x019024
+BYTE 0x01 0x20
+POP
+
+// Panacea
+PUSH
+ORG $290EE
+SHORT 0x2800 0xD001
+POP
+
+// Rescue Trade
+PUSH
+ORG 0x0229A8
+SHORT 0x1C00
+ORG 0x022A10
+SHORT 0x1C00
+POP
+
+// autolevel normal mode bonus fix by shuusuke
+
+PUSH
+ORG $180FC
+SHORT 0xFF63
+POP
+
+ALIGN 4
+ChangeWeaponRankASMC:
+#incbin "ChangeWeaponRanksASMC/ChangeWeaponRankASMC.dmp"
+
+#include "ToggleDeploymentSwapping/ToggleDeploymentSwappingInstaller.event"
+
+#include "FE8-Set Condition/FE8-Set Condition.event"
+
+#include "ModularMinimugBox-master/Installers/MMBInstallerSagaOfTheSigilbearers.event"
+
+#include "Graphics/PortraitHeight/PortraitShiftTable(installthisone).event"
+
+#include "StanAI/StanAI.event" 
+
+#include "ReworkForPrepScreenRightTopImage/Installer.event"
+
+#include "Graphics/NosResire/NosResire.event"
+
+#include "Graphics/ForblazeSourcePort/Forblaze Installer.event"
+
+#include "MultiTileMarker/MultiTileMarker_Install.event"
+
+#include "EventGetCountOfUnit/Installer.event"
+
+#include "StallAIs/AITableExpansion/AI1TableExpansion.event"
+
+#include "StallAIs/AITableExpansion/AI2TableExpansion.event"
+
+#include "StallAIs/StallAI/StallAI.event"
+
+#include "EnemyEscapeHook/EnemyEscapeHook.event"
+
+#include "MapChangeToFlag/Installer.event"
+
+#include "MinimugPalette/Installer.event"
+
+#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
+
+#include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
+
+#include "RingRework/RingRework_Installer.event"
+
+#include "NarrowFontExtension/SerifExtension.event"
+
+#include "FogVisionTiles/Installer.event"
